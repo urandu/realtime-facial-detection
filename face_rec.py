@@ -1,5 +1,5 @@
 # facerec.py
-import cv2, sys, numpy, os,pyttsx,time
+import cv2, sys, numpy, os, pyttsx, time
 size = 4
 fn_haar = 'haarcascade_frontalface_default.xml'
 fn_dir = 'att_faces'
