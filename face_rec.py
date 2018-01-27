@@ -2,7 +2,7 @@
 import cv2, sys, numpy, os, pyttsx, time
 size = 4
 fn_haar = 'haarcascade_frontalface_default.xml'
-fn_dir = 'att_faces'
+fn_dir = 'database'
 
 
 # Part 1: Create fisherRecognizer
@@ -26,5 +26,5 @@ for (subdirs, dirs, files) in os.walk(fn_dir):
 
 # OpenCV trains a model from the images
 
-model = cv2.face.createFisherFaceRecognizer()
+model = cv2.face.FisherFaceRecognizer_create()
 model.train(images, lables)
